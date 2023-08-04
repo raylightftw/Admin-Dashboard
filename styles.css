@@ -61,7 +61,8 @@ body
 }
 
 .cards
-{
+{   
+    margin-top:25px;
     display:grid;
     padding: 3em;
     grid-gap: 2em;
@@ -105,7 +106,7 @@ body
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     padding:20px;
-    border-radius: 30px;
+    border-radius: 12px;
     box-shadow: 0px 5px 7px rgb(168, 168, 168);
 
 }
@@ -116,10 +117,11 @@ body
     height: 350px;
     background-color: white;
     font-family: 'Roboto', sans-serif;
-    border-radius: 30px;
+    border-radius: 12px;
     padding:20px;
     color:black;
     box-shadow: 0px 5px 7px rgb(168, 168, 168);
+    
 }
 
 .anns
@@ -138,13 +140,14 @@ body
 .trens
 {
     font-size:medium;
-    padding-left:1em;
-    padding-top:1em;
-    padding-right:1em;
+    
     border-bottom-style:inset;
-    margin: 2px;
+    margin-left:10px;
     border-width: 1px;
     border-bottom-color: grey;
+    display:flex;
+    align-items:center;
+    gap:15px;
 }
 
 .sidebar-item
@@ -281,4 +284,55 @@ body
 .toprightname:hover
 {
     transform:scale(1.1);
+}
+
+.ann h4,.tren h4
+{
+    color:rgb(105, 105, 105);
+}
+
+.trenprofilepic
+{
+    height:60px;
+    border-radius:50%;
+}
+
+.profile
+{   
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+    
+}
+
+.profile h3
+{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: relative;
+    top:15px;
+
+}
+
+.profile h4
+{   
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: relative;
+    bottom:15px;
+}
+
+.bottom
+{
+    border-bottom:transparent;
+}
+
+.titles
+{
+    position: absolute;
+    font-family:'roboto',sans-serif;
+    left:450px;
+    font-size: 25px;
+    top:240px;
 }
