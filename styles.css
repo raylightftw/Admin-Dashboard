@@ -68,6 +68,7 @@ body
     grid-gap: 2em;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     background-color: transparent;
+    grid-template-rows: 300px 300px;
 }
 
 .card
@@ -224,6 +225,8 @@ body
     border-radius: 200px;
     background-color: #7dd3fc;
     font-size: 17px;
+    font-family:'roboto',sans-serif;
+    font-weight: bold;
 }
 .buttonsname button:hover
 {
@@ -335,4 +338,22 @@ body
     left:450px;
     font-size: 25px;
     top:240px;
+}
+
+.card a
+{
+    display:contents;
+    color:black;
+}
+
+input[type=text]:focus 
+{
+    outline-color:#7dd3fc;
+}
+
+.anntrenheads
+{
+    font-family: 'roboto',sans-serif;
+    font-size: 20px;
+    padding:5px;
 }
